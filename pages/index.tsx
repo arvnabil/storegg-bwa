@@ -1,6 +1,5 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable quotes */
-/* eslint-disable react/function-component-definition */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
 import { useEffect } from 'react';
 import AOS from 'aos';
 import Navbar from '../components/sections/Navbar';
@@ -18,17 +17,11 @@ export default function Home() {
   return (
     <>
       <Navbar />
-
       <MainBanner />
-
       <TransactionStep />
-
       <FeaturedGame />
-
       <Reached />
-
       <Story />
-
       <Footer />
     </>
   );

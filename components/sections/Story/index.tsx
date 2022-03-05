@@ -1,3 +1,6 @@
+import Image from 'next/image';
+import Link from 'next/link';
+
 export default function index() {
   return (
     <section className="story pt-50 pb-50">
@@ -7,12 +10,12 @@ export default function index() {
             className="col-lg-7 col-12 d-lg-flex d-none justify-content-lg-end pe-lg-60"
             data-aos="zoom-in"
           >
-            <img
+            <Image
               src="/img/Header-9.png"
-              width="612"
-              height="452"
+              width={612}
+              height={452}
               className="img-fluid"
-              alt=""
+              alt="Story Image"
             />
           </div>
           <div className="col-lg-5 col-12 ps-lg-60">
@@ -30,13 +33,14 @@ export default function index() {
                 pemenang sejati
               </p>
               <div className="d-md-block d-flex flex-column w-100">
-                <a
-                  className="btn btn-read text-lg rounded-pill"
-                  href="#/"
-                  role="button"
-                >
-                  Read Story
-                </a>
+                <Link href="/story">
+                  <a
+                    className="btn btn-read text-lg rounded-pill"
+                    role="button"
+                  >
+                    Read Story
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
